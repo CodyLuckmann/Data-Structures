@@ -21,3 +21,20 @@ person = {"firstName": "Joe",
 
 for item in person:
     print(person.get(item))
+
+# List to store dictionary
+
+mom = {"firstName" : "Dawn",
+       "lastName" : "Luckmann",
+       "relationship": "Mom"}
+
+dad = {"firstName" : "Gar",
+       "lastName" : "Luckmann",
+       "relationship" : "Dad"}
+
+sister = {"firstName": "Casey",
+                 "lastName" : "Luckmann",
+                 "relationship" : "Sister"}
+
+family_members = [mom, dad, sister]
+
