@@ -2,4 +2,8 @@
 
 class Node:
     def __init__(self, data):
-        pass
+        self.data = data
+        self.left = None
+        self.right = None
+        
+    
