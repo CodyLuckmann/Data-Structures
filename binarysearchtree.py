@@ -28,19 +28,30 @@ class BinarySearchTree:
             prev_node.right_child = node
             
     def search_node(self, data):
-        if self.root == data:
+        x = Node(data)
+        if self.root.data == data:
             print("Node is found!")
-        if data < self.root:
-            if self.left_child:
-                self.left_child.search(data)
+            return
+        current_node = self.root
+        while current_node:
+            if data < current_node.data:
+                current_node = current_node.left_child
+            elif current_node.data == data:
+                print("Node is found")
+                return
+            elif data > current_node.data:
+                current_node = current_node.right_child
             else:
-                print("Node is not present in tree!")
-        else:
-            if self.right_child:
-                self.right_child(data)
-            else:
-                print("Node is not present in tree!")
+                if current_node.data == None:
+                    print("Node is not found")
+                    return
+            
+            
+
+            
         
+            
+
                 
         
         
