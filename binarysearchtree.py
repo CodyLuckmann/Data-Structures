@@ -41,10 +41,10 @@ class BinarySearchTree:
                 return
             elif data > current_node.data:
                 current_node = current_node.right_child
-            else:
-                if current_node.data == None:
-                    print("Node is not found")
-                    return
+        else: 
+            print("Node is not found")
+            return
+            
             
             
 
