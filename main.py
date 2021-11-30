@@ -10,4 +10,8 @@ bts.insert_node(105)
 bts.insert_node(90)
 bts.insert_node(50)
 
+bts.search_node(50)
 bts.search_node(65)
+bts.search_node(87)
+bts.search_node(150)
+bts.search_node(109)
